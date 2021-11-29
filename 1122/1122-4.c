@@ -8,15 +8,17 @@ int main(void){
         scanf("%d", &num[i]);
     }
     for (int j = 0; j < n; j++){
-        while (num[j] / 10 != 0){
-            temp1[j] += num[j] % 10;
-            num[j] / 10;
+        while (1 == 1){
+            if (num[j] / 10 > 10){
+                temp1[j] += num[j] % 10;
+                printf("%d", temp1[j]);
+                num[j] / 10;
+                printf("%d", num[j]);
+            }else{
+                temp1[j] += num[j];
+                printf("%d", temp1[j]);
+                break;
+            }
         }
-        if (temp1[j] > temp1[j+1]){
-            temp2 = num[j];
-            num[j] = num[j+1];
-            num[j+1] = temp2;
-        }
-        printf("%d", num[j]);
     }
 }
