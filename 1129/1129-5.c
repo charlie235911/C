@@ -20,11 +20,13 @@ int main(void)
         }
     }
     int *aptr = a[0], *bptr = b[0];
+    int m = 0;
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {
-            printf("%3d\t", *(aptr + i*row + j) + *(bptr + i*row + j));
+            printf("%3d\t", *(aptr + m) + *(bptr + m));
+            m++;
         }
         printf("\n");
     }
