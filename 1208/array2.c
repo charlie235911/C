@@ -30,11 +30,11 @@ int main(void)
             else if (a[i][j] != b[i][j])
             {
                 printf("No");
-                flag = 0;
+                flag = 1;
                 break;
             }
         }
-        if (flag == 0)
+        if (flag == 1)
         {
             break;
         }
