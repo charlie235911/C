@@ -9,14 +9,14 @@ int main(void)
     {
         for (int j = 0; j < m; j++)
         {
-            scanf("%d", &a[i][j]);
+            scanf("%3d", &a[i][j]);
         }
     }
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
         {
-            scanf("%d", &b[i][j]);
+            scanf("%3d", &b[i][j]);
         }
     }
     for (int i = 0; i < n; i++)
