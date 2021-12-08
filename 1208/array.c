@@ -3,7 +3,7 @@
 int main(void)
 {
     int n, m;
-    scanf("%d%d", &n, &m);
+    scanf("%2d%2d", &n, &m);
     int a[n][m], b[n][m];
     for (int i = 0; i < n; i++)
     {
