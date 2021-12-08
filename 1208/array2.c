@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int n, m, flag;
+    int n, m, flag = 0;
     scanf("%2d%2d", &n, &m);
     int a[n][m], b[n][m];
     for (int i = 0; i < n; i++)

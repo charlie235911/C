@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int n, temp = 0;
+    int n, temp;
     scanf("%d", &n);
     int a[n][n];
     for (int i = 0; i < n; i++)
@@ -14,7 +14,8 @@ int main(void)
     }
     for (int i = 0; i < n; i++)
     {
-        temp += a[i][n-i-1];
+        temp = a[i][i];
+        a[i][i] = a[i][n-i-1];
+        a[i][n-i-1] = temp;
     }
-    printf("%d\n", temp);
 }
