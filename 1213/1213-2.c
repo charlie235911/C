@@ -2,10 +2,10 @@
 
 int main(void)
 {
-    int n, m, k, a = 0, check = 0;
+    int n = 0, m = 0, k = 0, a = 0, check = 0;
     scanf("%d", &n);
     int c[n][n];
-    while (m < 2 * n - 2)
+    while (m < 2 * n - 1)
     {
         if (check == 0)
         {
